@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+  <title>Burger Sub</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-------------------header and navbar----------------->
+  <header>
+    <div class="logo">
+      <img src="image/logo.png" alt="Burger Sub Logo">
+    </div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="#Burgers">Burgers</a></li>
+        <li><a href="#full-menu">Full Menu</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="toggle-button">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+
+
+  <!----------------------hero section-------------------->
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Burger Sub</h1>
+      <p class="typewriter">Your destination for delicious burgers and submarines!</p>
+    </div>
+  </section>
+
+  <!----------------------Items-------------------------->
+<section class="fm-items">
+  <h1>Our Favorite Fast Moving Items</h1>
+  <section id="Burgers" class="fm-section">
+    
+    <div class="menu-items">
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="https://www.recipetineats.com/wp-content/uploads/2022/08/Cheeseburger.jpg?resize=650,813" alt="Burger 1">
+        </div>
+        <div class="item-details">
+          <h3>Cheeseburger</h3>
+          <p>Classic burger,chicken patee with cheese</p>
+          <p>Rs.1100.00</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="https://www.foodandwine.com/thmb/_hz1-1jxHmNJxNLZxIjlOs2QQ3E=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/Ultimate-Veggie-Burgers-FT-Recipe-0821-5d7532c53a924a7298d2175cf1d4219f.jpg" alt="Burger 2">
+        </div>
+        <div class="item-details">
+          <h3>Ultimate Veggie Burgers</h3>
+          <p>with a hearty mix of pearl barley, chickpeas, mushrooms, and crispy panko.</p>
+          <p>Rs.1300.00</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="https://www.foodandwine.com/thmb/qEZ3iMxsIKQ85j5flvS5k5Ng2yI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/hatch-chile-smash-burgers-FT-seo-RECIPE0719_0-183c980af99541528d6cfa7f40ca2c21.jpg" alt="Burger 3">
+        </div>
+        <div class="item-details">
+          <h3>Chile Smash Burgers</h3>
+          <p>cheese and salsa that melt into a queso-like moment and take this burger</p>
+          <p>Rs.1500.00</p>
+        </div>
+      </div>
+
+      <div class="menu-item">
+        <div class="item-image">
+          <img src="https://www.foodandwine.com/thmb/h_oC7W8DwN9MaFBut-KbnMwhepE=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/japanese-style-chili-burgers-with-yuzu-mayo-FT-RECIPE0620-2f8384135fc042e79cc256d17ad672f9.jpg" alt="Burger 4">
+        </div>
+        <div class="item-details">
+          <h3>Chili Burgers with Yuzu Mayo</h3>
+          <p>wo-hander, topped with Japanese-spiced chili, tomatoes, and shredded iceberg lettuce.e</p>
+          <p>Rs.1850.00</p>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+<!---------------------------Menu Table------------------------------>
+
+<section id="full-menu" class="responsive-table">
+  <h2>Burger Menu</h2>
+  <table class="menu-table">
+    <tr class="table-header">
+      <th class="col col-1">Item</th>
+      <th class="col col-2">Description</th>
+      <th class="col col-3">Price</th>
+      <th class="col col-4">Order Quantity</th>
+    </tr>
+    <tr class="table-row">
+      <td class="col col-1" >Cheese Burger</td>
+      <td class="col col-2">Classic burger,chicken patee with cheese</td>
+      <td class="col col-3">Rs.1100.00</td>
+      <td class="col col-4">
+        <div class="quantity-selector">
+          <input type="number" min="0" max="10" value="0">
+        </div>
+      </td>
+    </tr>
+    <tr class="table-row">
+      <td class="col col-1" >Ultimate Veggie Burger</td>
+      <td class="col col-2">with a hearty mix of pearl barley, chickpeas, mushrooms, and crispy panko</td>
+      <td class="col col-3">Rs.1300.00</td>
+      <td class="col col-4">
+        <div class="quantity-selector">
+          <input type="number" min="0" max="10" value="0">
+        </div>
+      </td>
+    </tr>
+    <tr class="table-row">
+      <td class="col col-1" >Chile Smash Burger</td>
+      <td class="col col-2">cheese and salsa that melt into a queso-like moment and take this burger</td>
+      <td class="col col-3">Rs.1500.00</td>
+      <td class="col col-4">
+        <div class="quantity-selector">
+          <input type="number" min="0" max="10" value="0">
+        </div>
+      </td>
+    </tr>
+    <tr class="table-row">
+      <td class="col col-1" >Crispy Chicken Burger</td>
+      <td class="col col-2">Freshly made chrispy chicken ,cheese and mayo</td>
+      <td class="col col-3">Rs 1750.00</td>
+      <td class="col col-4">
+        <div class="quantity-selector">
+          <input type="number" min="0" max="10" value="0">
+        </div>
+      </td>
+    </tr>
+    <tr class="table-row">
+      <td class="col col-1" >Burger Combo meal</td>
+      <td class="col col-2">bbq chicken,omlet,salod and potato wedges</td>
+      <td class="col col-3">Rs 2250.00</td>
+      <td class="col col-4">
+        <div class="quantity-selector">
+          <input type="number" min="0" max="10" value="0">
+        </div>
+      </td>
+    </tr>
+    <tr class="table-row">
+      <td class="col col-1" >Burger Tower</td>
+      <td class="col col-2">recomend for 4 person</td>
+      <td class="col col-3">Rs.4500.00</td>
+      <td class="col col-4">
+        <div class="quantity-selector">
+          <input type="number" min="0" max="10" value="0">
+        </div>
+      </td>
+    </tr>
+  </table>
+</section>
+
+<!---------------------------about and coontact---------------------->
+  <div class="about-section">
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Welcome to Burger Sub! We strive to serve the best quality food.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Reach out to us at:</p>
+      <address>
+        Email: info@burgersub.com<br>
+        Phone:091-1015099 / 078-456-7890<br>
+        Address: 123 Main Street, galle
+      </address>
+    </section>
+
+      <div class="social-links">
+        <a href="https://web.facebook.com/"><img class="social-link" src="image/facebook.png" alt="" ></a>
+        <a href="https://www.instagram.com/"><img class="social-link" src="image/instagram.png" alt=""></a>
+        <a href="https://www.tiktok.com/"><img class="social-link" src="image/tiktok.png" alt=""></a>
+        <a href="https://www.messenger.com/"><img class="social-link" src="image/messenger.png" alt=""></a>
+      </div>
+
+  </div>
+
+  <!------------------------------footer----------------------------->
+  <footer>
+    <p>&copy; 2024 Burger Sub</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

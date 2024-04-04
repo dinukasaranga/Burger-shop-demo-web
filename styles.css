@@ -1,0 +1,414 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Poppins:wght@200;300;400;500&display=swap');
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*---------------------------header------------------------------*/
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f8f8f8;
+  padding: 20px;
+  font-size: 1rem;
+  list-style: none;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+}
+
+.navbar ul li a{
+  list-style-type: none;
+}
+
+/* Toggle button styles */
+.toggle-button {
+  display: none; /* Hide by default */
+  flex-direction: column;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.toggle-button span {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+/* Show/hide the toggle button for mobile */
+@media screen and (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+    color: #f8f8f8;
+  }
+
+  .navbar ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px 0;
+    flex-direction: column;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .navbar ul li {
+    font-size: large;
+    font-weight: bold;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+
+  .navbar li a {
+    color: #f8f8f8;
+    list-style: none;
+  }
+}
+
+
+/*---------------------------Hero------------------------------*/
+
+.hero {
+  background-image: url("https://www.thespruceeats.com/thmb/kvLvyRaQnCB5qWUUoWSe5aWMBwE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-your-best-grilled-burger-recipe-7511041-hero-F-1cdf6c54c0814baf9f04df0cc1038d84.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25);
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-family: 'Fira Sans', sans-serif;
+  font-weight:800 ;
+  font-size: 5em;
+  -webkit-text-stroke-width: .1px;
+  -webkit-text-stroke-color: black;
+  top: 10px;
+}
+
+.hero p {
+  font-size: 2em;
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: black;
+}
+
+.hero h1,
+.hero p {
+  transition: color 0.5s ease;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: 0.15em solid rgb(219, 222, 231);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.1em;
+  animation: typing 3.5s steps(30), blink-caret 0.5s;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero {
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+  }
+
+  .hero h1 {
+    font-size: 3em;
+  }
+
+  .hero p {
+    font-size: 1em;
+    color: white;
+    padding: 10px;
+    
+  }
+
+  .fm-items {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/*---------------------------Item Section------------------------------*/
+.fm-items {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.fm-items > h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.fm-section {
+  padding: 10px 10px;
+  text-align: center;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-item {
+  max-width: 350px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.item-image img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.item-details {
+  padding: 15px;
+}
+
+.item-details h3 {
+  margin-top: 0;
+}
+
+.item-details p {
+  margin-bottom: 5px;
+}
+
+/*---------------------------Table------------------------------*/
+#full-menu {
+  align-items: center;
+  justify-content: center;
+  margin: 100px;
+}
+
+.responsive-table > h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.responsive-table {
+  max-width: 100%;
+}
+
+.menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-table tr {
+  border-radius: 3px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.table-header {
+  background-color: rgb(183, 177, 177);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.table-row {
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.table-row>.col-1{
+  font-weight:550;
+}
+
+h2 {
+  font-size: 26px;
+  margin: 20px 0;
+  text-align: center;
+  
+}
+
+.responsive-table {
+  .col-1 {
+    flex-basis: 20%;
+  }
+  .col-2 {
+    flex-basis: 50%;
+  }
+  .col-3 {
+    flex-basis: 15%;
+  }
+  .col-4 {
+    flex-basis: 15%;
+  }
+}
+
+/* Responsive table styles */
+@media screen and (max-width: 768px) {
+
+  .table-header {
+    display:none;
+  }
+  .table-row {
+  }
+  li {
+    display:block;
+  }
+  .col {
+    display: flex;
+    padding: 10px 0;
+    &:before {
+      color: #6c7a89;
+      padding-right: 10px;
+      content: attr(data-label);
+      text-align: right;
+    }
+  }
+  .menu-table {
+    overflow-x: auto;
+    display: block;
+    width: 100%;
+  }
+
+  .menu-table thead,
+  .menu-table tbody,
+  .menu-table th,
+  .menu-table td,
+  .menu-table tr {
+    display: block;
+  }
+
+  .menu-table tr {
+    margin-bottom: 15px;
+  }
+
+  .menu-table thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .menu-table td {
+    border: none;
+    position: relative;
+    white-space: normal;
+    text-align: left;
+  }
+
+  .menu-table td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    content: attr(data-label);
+    font-weight: bold;
+  }
+
+}
+
+
+/*---------------------------About section------------------------------*/
+.about-section {
+  background-color: rgb(183, 177, 177);
+  padding: 10px;
+}
+.social-links {
+  padding-top: 30px;
+  text-align: center;
+  background: rgb(183, 177, 177);
+  align-items: center;
+}
+.social-link {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/*---------------------------Footer------------------------------*/
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #5f5e5e;
+  color: white;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    text-align: center;
+    font-size: 14px; 
+  }
+}
